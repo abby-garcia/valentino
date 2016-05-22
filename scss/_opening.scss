@@ -1,0 +1,105 @@
+// Header
+header {	
+	background: $secondary-color;
+	padding: 10px;
+	@include prefix(box-shadow, 0 3px 3px rgba(0,0,0,0.05)); 
+	@extend %clearfix;
+
+	.logo {
+		color: $primary-color;
+		float: left;
+		font:{
+			family: $base-font-title;
+			size: 22px;
+			weight: 500;
+		}
+		
+		> span {
+			color: lighten($primary-color, 20%);
+			font-weight: 300;
+		}
+	}
+
+	.social {
+		float: right;
+		.btn {
+			font-family: "Dosis";
+			font-size: 14px;
+			margin: 10px 5px;
+		}
+	}
+}
+/**/
+
+
+
+
+
+
+
+
+body.opening-page{
+	background: #466368;
+    background: -webkit-linear-gradient(#F535AA, #848b79);
+    background: -o-linear-gradient(#F535AA, #848b79);
+    background: linear-gradient(#F535AA, #848b79);
+
+	.opening{
+		/*text-align: center;*/
+		margin-top: 4%;
+		margin-bottom: 15%;
+		margin-left: 11%;
+		border-style: double;
+		width: 75%;
+		background-color: black;
+
+
+	}
+
+	.design{
+		font-family: 'Cherry Cream Soda', cursive;
+		padding-left: 5%;
+		padding-bottom: 2%;
+	}
+
+	.design h2{
+		font-size: 2.5em;
+	}
+
+	.bowtie, .hats, .dress, .tie, .hat2 , .hat3, .banana, .shoes {
+		margin-top: 7%;
+		height:40%;
+		width:40%;
+	}
+
+	h2{
+		color:white;
+		text-align: center;
+
+	}
+
+
+	.ballroom h2{
+		font-family: 'Arizonia', cursive;
+		float: left;
+		margin-left: -13%;
+    	font-size: 44px;
+
+	}
+
+	.cesar_headpiece{
+		margin-top: 83px;
+    	margin-left: -15%;
+    	height: 100%;
+    	width: 81%;
+	}
+
+	@media screen and (max-width : 500px) {
+    	.ballroom h2{font-size: 1.5em;}
+
+	}
+
+
+
+}
+

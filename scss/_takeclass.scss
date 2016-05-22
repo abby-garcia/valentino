@@ -1,0 +1,109 @@
+// Header
+header {	
+	background: $secondary-color;
+	padding: 10px;
+	@include prefix(box-shadow, 0 3px 3px rgba(0,0,0,0.05)); 
+	@extend %clearfix;
+
+	.logo {
+		color: $primary-color;
+		float: left;
+		font:{
+			family: $base-font-title;
+			size: 22px;
+			weight: 500;
+		}
+		
+		> span {
+			color: lighten($primary-color, 20%);
+			font-weight: 300;
+		}
+	}
+
+	.social {
+		float: right;
+		.btn {
+			font-family: "Dosis";
+			font-size: 14px;
+			margin: 10px 5px;
+		}
+	}
+}
+
+
+
+.take_class {
+	background-color: black;
+
+	h4 {
+	font-family: 'Righteous', cursive;
+	font-size: 68px;
+	text-align: center;
+	color:white;
+	}
+
+
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    img { // why doesn't this work without important - bootstrap was more specific than me
+		height: 500px !important;
+		margin: 0 auto !important;
+
+    }
+}
+
+.alvin{
+	
+
+	h2,h3{
+		text-align: center;
+		color:white;
+		font-family: 'Righteous', cursive;
+	}
+
+	h2{
+		font-size: 50px;
+	}
+
+	h3{
+		font-size: 45px;
+
+	}
+
+	h4{
+		font-size: 45px;
+		color:#F6358A;
+	}
+
+	a{
+		text-decoration: none;
+		color:#F6358A;
+	}
+}
+
+.private{
+	margin-bottom: 100px;
+	font-family: 'Righteous', cursive;
+	text-align: center;
+
+	h4{
+		font-size: 40px;
+	}
+
+	.private_word{
+		color:#7D0552;
+		font-size: 50px;
+	}
+
+}
+
+
+.class_videos{
+	text-align: center;
+}
+
